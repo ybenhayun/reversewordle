@@ -1,0 +1,116 @@
+.word {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+html {
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: #96C0B7;
+    background: #AB2346;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    width: 1rem;
+    text-align: center;
+}
+
+.letter {
+    border: solid 1px black;
+    background: #3A3A3C;
+    aspect-ratio: 1;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 4.1vh;
+}
+
+.letter.filled {
+    background: #538D4E
+}
+
+.title {
+    margin-bottom: 0;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+}
+
+.subtitle {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    max-height: 30rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    overflow-y: scroll;
+    padding-top: 0.5rem;
+}
+
+.words-container {
+    margin-top: 1rem;
+    width: 17.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #191516;
+    border-radius: 2vw;
+}
+
+.words-container:has(.on) {
+    max-height: 25rem;
+    padding-bottom: 0.5rem;
+}
+
+li {
+    flex: 1 0 20%;
+    text-align: center;
+}
+
+.words-left {
+    color: #AB2346;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bold;
+    width: 95%;
+    margin-bottom: 0;
+}
+
+.words-left.on {
+    border-bottom: 2px solid gray;
+    padding-bottom: .3rem;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    color: #191516;
+    font-weight: bold;
+}

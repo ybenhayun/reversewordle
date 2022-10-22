@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" type = "text/css" href = "reverse.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script type = "text/javascript" src = "reverse.js"></script>
+    <script type = "text/javascript" src = "all-words.js"></script>
+    <title>Reverse WordleBot</title>
+</head>
+<body>
+    <h1 class="title">Reverse WordleBot</h1>
+    <h2 class="subtitle">for 
+        <select name="word-legnth" id="word-length">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+        </select>
+        letter words.
+    </h2>
+
+    <div class = 'info'> 
+        <p>Give me a <input onkeydown= "return /[a-z]/i.test(event.key)" maxlength = "1" style="text-transform:uppercase" id = "letter-entered" type="text">
+        </p>
+        <button class="enter" onclick = "addLetter()">Add Letter</button>
+
+
+    </div>
+    <div class="word">
+    </div>
+
+    <div class = 'words-container'>
+        <p class = 'words-left'>Give me a letter, and I'll try to make a word.</p>
+        <ul class = 'word-list'></ul>
+    </div>
+
+    
+</body>
+</html>
