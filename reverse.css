@@ -39,7 +39,8 @@ body {
 }
 
 input {
-    width: 1rem;
+    width: 1.2rem;
+    height: 1.4rem;
     text-align: center;
 }
 
@@ -131,4 +132,26 @@ li {
     gap: 0.3rem;
     color: #191516;
     font-weight: bold;
+    margin-top: 1rem;
+}
+
+.enter {
+    text-decoration: underline;
+    border: none;
+    background: transparent;
+    margin-left: .5rem;
+    color: blue;
+}
+
+.reset {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.reset.off {
+    color: transparent;
 }

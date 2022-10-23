@@ -8,6 +8,23 @@ $(document).ready(function() {
     });
 })
 
+function reset() {
+    let letters = document.getElementsByClassName('letter');
+    let list = document.getElementsByClassName("words-left")[0];
+    let words = document.getElementsByClassName('word-list')[0];
+    let button = document.getElementsByClassName('reset')[0];
+    
+    button.classList.add('off');
+    list.classList.remove('on');
+    words.innerHTML = "";
+    list.innerHTML = "Give me a letter, and I'll try to make a word.";
+
+    for (let i = 0; i < letters.length; i++) {
+        letters[i].innerHTML = "";
+        letters[i].classList.remove('filled');
+    }
+}
+
 function update() {
     let combos = [];
     let counter = 0;
@@ -63,6 +80,9 @@ function showRemainingList(word_list, letter, spot) {
     let remaining = document.getElementsByClassName('words-left')[0];
     remaining.innerHTML =  word_list.length + " words remaining";
     remaining.classList.add('on');
+
+    let button = document.getElementsByClassName('reset')[0];
+    button.classList.remove('off');
 
     let list = "";
     for (let i = 0; i < word_list.length; i++) {    

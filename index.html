@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel = "stylesheet" type = "text/css" href = "reverse.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
     <script type = "text/javascript" src = "reverse.js"></script>
     <script type = "text/javascript" src = "all-words.js"></script>
@@ -38,6 +39,7 @@
         </div>
         
         <div class = 'words-container'>
+            <button class="reset off" onclick = "reset()"><i class="fa fa-refresh"></i></button>
             <p class = 'words-left'>Give me a letter, and I'll try to make a word.</p>
             <ul class = 'word-list'></ul>
         </div>
